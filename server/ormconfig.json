@@ -1,0 +1,18 @@
+{
+	"type": "postgres",
+	"host": "localhost",
+	"port": "5432",
+	"username": "postgres",
+	"password": "postgres",
+	"database": "jwt-auth",
+	"synchronize": true,
+	"logging": false,
+	"entities": ["build/entity/*.js"],
+	"migrations": ["build/migration/*.js"],
+	"subscriber": ["build/subscriber/*.js"],
+	"cli": {
+		"enititesDir": "build/entity",
+		"migrationsDir": "build/migration",
+		"subscriberDir": "build/subscriber"
+	}
+}
